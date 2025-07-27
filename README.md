@@ -33,3 +33,38 @@ Delete student by ID
 git clone https://github.com/amitkumar-tech07/springboot-student-api.git
 <br>
 cd springboot-student-api
+
+
+
+ #API Endpoints
+ 
+| Method | Endpoint         | Description          |
+| ------ | ---------------- | -------------------- |
+| GET    | `/students`      | Get all students     |
+| GET    | `/students/{id}` | Get student by ID    |
+| POST   | `/students`      | Add a new student    |
+| PUT    | `/students/{id}` | Update student by ID |
+| DELETE | `/students/{id}` | Delete student by ID |
+
+
+# Example JSON (POST / PUT)
+{
+  "id": 3,
+  "name": "Aman",
+  "email": "aman@example.com"
+}
+
+
+# Technologies Used
+
+Java
+Spring Boot
+Maven
+REST APIs
+Postman (for testing)
+
+# Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you'd like to change.
+
+# Author
+Amit Kumar – @amitkumar-tech07
