@@ -2,6 +2,7 @@
 
 <br>
 A simple Spring Boot-based RESTful API for managing students.
+<br>
 This project demonstrates basic CRUD operations (Create, Read, Update, Delete) without a database, using in-memory data for learning purposes.
 
 
@@ -30,4 +31,5 @@ Delete student by ID
 
 
 git clone https://github.com/amitkumar-tech07/springboot-student-api.git
+<br>
 cd springboot-student-api
