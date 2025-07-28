@@ -17,13 +17,13 @@ public class StudentController {
         studentlist.add(new Student(2, "Anushka", "anukri@gmail.com"));
     }
 
-    // ✅ Get all Students
+    //  Get all Students
     @GetMapping
     public List<Student> getAllStudents() {
         return studentlist;
     }
 
-    // ✅ Get a single student by ID
+    //  Get a single student by ID
     @GetMapping("/{id}")
     public Student getStudent(@PathVariable int id) {
         return studentlist.stream()
@@ -32,14 +32,14 @@ public class StudentController {
                 .orElse(null);
     }
 
-    // ✅ Add new student (POST)
+    // Add new student (POST)
     @PostMapping
     public Student addStudent(@RequestBody Student student) {
         studentlist.add(student);
         return student;
     }
 
-    // ✅ Update student (PUT)
+    //  Update student (PUT)
     @PutMapping("/{id}")
     public Student updateStudent(@PathVariable int id, @RequestBody Student updatedStudent) {
         for (Student student : studentlist) {
@@ -52,7 +52,7 @@ public class StudentController {
         return null;
     }
 
-    // ✅ Delete student (DELETE)
+    // Delete student (DELETE)
     @DeleteMapping("/{id}")
     public String deleteStudent(@PathVariable int id) {
         boolean removed = studentlist.removeIf(student -> student.getId() == id);
